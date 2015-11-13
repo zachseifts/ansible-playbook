@@ -12,6 +12,9 @@
 - name: ensure vim is at the latest version
   apt: name=vim state=latest
 
+- name: ensure ufw is at the latest version
+  apt: name=ufw state=latest
+
 # Configure ntp
 - name: ensure ntp is at the latest version 
   apt: name=ntp state=present
