@@ -64,4 +64,4 @@
 
 # Add in keys
 - name: add zach's keys
-  authorized_key: user=charlie key=https://github.com/zachseifts.keys
+  authorized_key: user=zach key=https://github.com/zachseifts.keys
