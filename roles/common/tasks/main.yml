@@ -14,9 +14,15 @@
 
 - name: ensure ufw is at the latest version
   apt: name=ufw state=latest
-  
+  tags: firewall
+
 - name: configure ufw
   ufw: state=disabled logging=on
+  tags: firewall
+
+- name: allow ssh connections with ufw
+  ufw: rule=allow name=OpenSSH
+  tags: firewall
 
 # Configure ntp
 - name: ensure ntp is at the latest version 
