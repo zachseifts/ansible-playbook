@@ -21,4 +21,4 @@
   notify: restart ntp
 
 - name: start the ntpd process
-  service: name=ntpd state=started enabled=yes
+  service: name=ntp state=started enabled=yes
