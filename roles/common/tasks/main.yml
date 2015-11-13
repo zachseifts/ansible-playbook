@@ -2,15 +2,19 @@
 # Common packages and configurations.
 - name: ensure curl is at the latest version
   apt: name=curl state=latest
+  tags: applications
 
 - name: ensure git is at the latest version
   apt: name=git state=latest
+  tags: applications
 
 - name: ensure tmux is at the latest version
   apt: name=tmux state=latest
+  tags: applications
 
 - name: ensure vim is at the latest version
   apt: name=vim state=latest
+  tags: applications
 
 - name: ensure ufw is at the latest version
   apt: name=ufw state=latest
