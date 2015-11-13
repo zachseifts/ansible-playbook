@@ -12,6 +12,10 @@
   apt: name=tmux state=latest
   tags: applications
 
+- name: ensure zsh is at the latest version
+  apt: name=zsh state=latest
+  tags: applications
+
 - name: ensure vim is at the latest version
   apt: name=vim state=latest
   tags: applications
@@ -53,4 +57,7 @@
 
 # Add users
 - name: add zach user
-  user: name=zach groups=sudo,sshusers
+  user:
+    name=zach
+    groups=sudo,sshusers
+    shell=/usr/bin/zsh
