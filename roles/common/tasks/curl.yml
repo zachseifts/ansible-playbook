@@ -1,3 +1,0 @@
----
-- name: ensure curl is at the latest version
-  apt: name=curl state=latest
