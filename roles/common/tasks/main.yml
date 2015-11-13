@@ -23,6 +23,9 @@
 - name: allow ssh connections with ufw
   ufw: rule=allow name=OpenSSH
   tags: firewall
+  
+- name: allow ntp connections
+  ufw: rule=allow port=123 proto=udp
 
 # Configure ntp
 - name: ensure ntp is at the latest version 
