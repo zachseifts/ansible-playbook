@@ -1,2 +1,7 @@
 ---
 # Master playbook
+- hosts: all
+  tasks:
+    - include: roles/common/tasks/vim.yml
+    - include: roles/common/tasks/curl.yml
+    - include: roles/common/tasks/git.yml
