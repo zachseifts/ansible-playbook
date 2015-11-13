@@ -43,6 +43,10 @@
 - name: start the ntpd process
   service: name=ntp state=started enabled=yes
 
+# Add groups
+- name: create the sshusers group
+  group: name=sshusers state=present
+
 # Add users
 - name: add zach user
   user: name=zach
