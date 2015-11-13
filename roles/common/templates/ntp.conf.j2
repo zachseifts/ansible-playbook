@@ -1,0 +1,16 @@
+# Enable next tinker options:
+tinker panic 0
+
+restrict -4 default kod nomodify notrap nopeer noquery
+restrict -6 default kod nomodify notrap nopeer noquery
+restrict 127.0.0.1
+restrict ::1
+
+# Set up servers for ntpd with next options:
+server 0.debian.pool.ntp.org iburst
+server 1.debian.pool.ntp.org iburst
+server 2.debian.pool.ntp.org iburst
+server 3.debian.pool.ntp.org iburst
+
+# Driftfile
+driftfile /var/lib/ntp/drift
