@@ -1,3 +1,0 @@
----
-- name: ensure vim is at the latest version
-  apt: name=vim state=latest
