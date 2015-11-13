@@ -42,3 +42,7 @@
 
 - name: start the ntpd process
   service: name=ntp state=started enabled=yes
+
+# Add users
+- name: add zach user
+  user: name=zach
