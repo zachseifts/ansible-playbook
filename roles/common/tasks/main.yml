@@ -17,7 +17,7 @@
   tags: firewall
 
 - name: configure ufw
-  ufw: state=enabled
+  ufw: state=enabled policy=deny
   tags: firewall
 
 - name: allow ssh connections with ufw
