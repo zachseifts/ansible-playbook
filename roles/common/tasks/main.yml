@@ -14,6 +14,8 @@
 
 - name: ensure ufw is at the latest version
   apt: name=ufw state=latest
+  
+- name: configure ufw
   ufw: state=disabled logging=on
 
 # Configure ntp
