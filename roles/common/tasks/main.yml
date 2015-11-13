@@ -15,6 +15,10 @@
 - name: ensure vim is at the latest version
   apt: name=vim state=latest
   tags: applications
+  
+- name: ensure sudo is at the latest version
+  apt: name=sudo state=latest
+  tags: applications
 
 # Configure the firewall
 - name: ensure ufw is at the latest version
