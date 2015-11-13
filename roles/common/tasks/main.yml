@@ -61,3 +61,7 @@
     name=zach
     groups=sudo,sshusers
     shell=/usr/bin/zsh
+
+# Add in keys
+- name: add zach's keys
+  authorized_key: user=charlie key=https://github.com/zachseifts.keys
