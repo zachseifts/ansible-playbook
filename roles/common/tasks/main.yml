@@ -49,4 +49,4 @@
 
 # Add users
 - name: add zach user
-  user: name=zach
+  user: name=zach groups=sudo,sshusers
