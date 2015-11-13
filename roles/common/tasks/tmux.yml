@@ -1,0 +1,3 @@
+---
+- name: ensure tmux is at the latest version
+  apt: name=tmux state=latest
